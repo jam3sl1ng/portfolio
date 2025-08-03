@@ -40,8 +40,7 @@ export const Navbar = () => {
           </span>
         </a>
 
-        {/* Desktop nav */}
-
+        {/* desktop nav */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
             <a
@@ -54,7 +53,7 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile nav */}
+        {/* mobile nav */}
 
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
