@@ -1,24 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<link rel="stylesheet" href="styles.css" />
-
-		<title>James Ling | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Ling | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
-	<body>
-		<!-- Ion Icons -->
-		<script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-	</body>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <a href="#about">James Ling</a>
+        </div>
+        <div class="right">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <section id="about">
+      <h2>Hi, I'm James 👋</h2>
+      <div class="hero">
+        <picture>
+          <source srcset="images/webp/hero.webp" type="image/webp">
+          <img src="images/hero.jpg" alt="Hero Image">
+        </picture>
+      </div>
+      <div class="bio">
+        <p>
+          Hi! I'm James, a student and self taught programmer in the UK who's passionate about
+          creating responsive and performant projects using modern technologies and frameworks.
+        </p>
+        <br>
+        <p>
+          I'm always keen to learn new skills to stay at the forefront of computational experiences.
+          Some of my projects include mobile applications, written in frameworks such as Flutter, and
+          games, developed using tools such as Unity and Godot.
+        </p>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/jam3sl1ng" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com/jam3sl1ng" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://github.com/jam3sl1ng" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div #swiperRef="" class="swiper card-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="" target="_blank" class="project-box">
+              <picture>
+                <source srcset="images/webp/tickitMockup1.webp" type="image/webp">
+                <img src="images/tickitMockup1.png" alt="TickIt">
+              </picture>
+              <h4>TickIt</h4>
+              <h5><em>Flutter</em></h5>
+              <p>TickIt is a sleek and minimal habit tracking app developed in flutter for android devices.</p>
+            </a>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <i class="fa-brands fa-flutter"></i>
+        <i class="fa-brands fa-android"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-react"></i>
+        <i class="fa-brands fa-python"></i>
+        <i class="fa-brands fa-figma"></i>
+        <i class="fa-brands fa-github-alt"></i>
+      </div>  
+    </section>
+
+    <!-- Swiper JS -->
+    <footer>
+      <p>&copy; <span id="year"></span> James Ling. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Automatically update the copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    
+        // Initialize Swiper
+        const swiper = new Swiper(".card-swiper", {
+          centeredSlides: false,
+          spaceBetween: 0,
+          lidesPerView: 'auto'
+        });
+      });
+    </script>
+  </body>
 </html>
