@@ -343,6 +343,30 @@ section h2::after {
   transform: scale(1.2);
 }
 
+/* Contact Section */
+#leave-message-section {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+#leave-message-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+#leave-message-section p {
+  font-size: 1.25rem;
+  color: #555;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
 footer {
   background-color: #909090;
   color: #fff;
