@@ -12,6 +12,8 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Formcarry -->
+     <link rel="stylesheet" href="formcarry-form.css" />
   </head>
 
   <body>
@@ -102,7 +104,20 @@
     <div class="divider"></div>
     <section id="contact">
         <h2>Contact Me!</h2>
-        <p>coming soon :)</p>
+        <div class="formcarry-container">
+          <form action="https://formcarry.com/s/GtnzLaJL2VI" method="POST" class="formcarry-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="fullName" required />
+
+            <label for="name">Email Address</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="name">Message</label>
+            <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
     </section>
 
     <!-- Swiper JS -->
